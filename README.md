@@ -41,12 +41,12 @@ Now let’s add that sum (13) to the sum of the digits that weren’t multiplied
 
 Yup, the last digit in that sum (20) is a 0, so David’s card is legit!
 
-So, validating credit card numbers isn’t hard, but it does get a bit tedious by hand. Let’s write a program.
+So, validating credit card numbers isn’t hard, but it does get a bit tedious by hand.
 
 # Implementation Details
-Write a program that prompts the user for a credit card number and then reports (via printf) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each’s format herein. So that we can automate some tests of your code, we ask that your program’s last line of output be AMEX\n or MASTERCARD\n or VISA\n or INVALID\n, nothing more, nothing less. For simplicity, you may assume that the user’s input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).
+This program prompts the user for a credit card number and then reports (via printf) whether it is a valid American Express, MasterCard, or Visa card number, per the definitions of each’s format herein. The program’s last line of output is AMEX\n or MASTERCARD\n or VISA\n or INVALID\n, nothing more, nothing less. For simplicity, we assume that the user’s input will be entirely numeric (i.e., devoid of hyphens, as might be printed on an actual card).
 
-Consider the below representative of how your own program should behave when passed a valid credit card number (sans hyphens).
+Consider the below representative of how the program behaves when passed a valid credit card number (sans hyphens).
 ```
 $ ./credit
 Number: 4003600000000014
@@ -60,7 +60,7 @@ Number: foo
 Number: 4003600000000014
 VISA
 ```
-But it’s up to you to catch inputs that are not credit card numbers (e.g., a phone number), even if numeric:
+But it also catches inputs that are not credit card numbers (e.g., a phone number), even if numeric:
 ```
 $ ./credit
 Number: 6176292929
